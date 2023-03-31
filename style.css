@@ -1,0 +1,74 @@
+@font-face {
+    font-family: droid;
+    src: url(./Font//droid-sans-mono/DroidSansMono.ttf);
+}
+@font-face {
+    font-family: roboto-regular;
+    src: url(./Font/Roboto/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+.container-fluid,.display-5,.b,.log{
+    font-family:droid;
+}
+.p1{
+    font-family: roboto-regular;
+}
+.con{
+    display:flex;
+    justify-content: flex-start;
+}
+.contact{
+    display:flex;
+    justify-content: flex-start;
+}
+.btn{
+    font-family: sans-serif;
+}
+.terms{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: space-between;
+    color:white;
+    background-color: black;
+    height: 75px;
+    box-sizing: border-box;
+    align-items: center;
+    overflow: hidden;
+}
+.btn2,.btn3{
+    background-color: black;
+    border: none;
+    color: white;
+}
+.btn2{
+    margin-left: 20px;
+    padding:12px;
+}
+.poz{
+    position:relative;
+    bottom:3px;
+}
+.font{
+    font-family: roboto-regular;
+}
+.btn3{
+    width: 164px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding:15px;
+    border-radius: 100px;
+    font-family: roboto-regular;
+}
+.btn2:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+.btn3:hover{
+    background-image: linear-gradient(90deg, rgb(0, 196, 204) 0%, rgb(125, 42, 232) 100%);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}
