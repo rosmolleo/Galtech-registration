@@ -8,7 +8,7 @@
       <?php
       include 'Mysql_connect.php';
       session_start();
-//  var_dump($_SESSION);
+      //  var_dump($_SESSION);
       $id = $_SESSION['id'];
       // echo $id;
       // echo $name;
@@ -18,22 +18,22 @@
       $row = $change_name->fetch_assoc();
       $name = $row['Name'];
       $email = $row['Email'];
-      $upload_img=$row['File Uploads'];
+      $upload_img = $row['File Uploads'];
       ?>
 
       <section>
             <div style="display:flex;justify-content:flex-start;">
-            <div style="width:80%;">
-            <?php if($upload_img){?>
-                  <img style="width:70%;height:45%;position:relative;top:133px;" src="Uploads/<?php echo $upload_img;?>" slt="file-upload-image">
- <?php } ?> 
+                  <div style="width:80%;">
+                        <?php if ($upload_img) { ?>
+                              <img style="width:70%;height:45%;position:relative;top:133px;" src="Uploads/<?php echo $upload_img; ?>" slt="file-upload-image">
+                        <?php } ?>
 
-                  <!-- <form action="upload.php?id=$id" method="post" enctype="multipart/form-data"> -->
-                  <form action="upload.php?id=<?php echo $id ?>" method="post" enctype="multipart/form-data">
-                        <input style="position:absolute;top:50px;left:37px;" type="file" name="fileUpload">
-                        <input type="submit" style="position:absolute;top:40px;left:280px;width:7%;height:5%;" value="Upload File" name="up">
-                  </form>
-            </div>
+                        <!-- <form action="upload.php?id=$id" method="post" enctype="multipart/form-data"> -->
+                        <form action="upload.php?id=<?php echo $id ?>" method="post" enctype="multipart/form-data">
+                              <input style="position:absolute;top:50px;left:37px;" type="file" name="fileUpload">
+                              <input type="submit" style="position:absolute;top:40px;left:280px;width:7%;height:5%;" value="Upload File" name="up">
+                        </form>
+                  </div>
                   <div style="background-color:#212221;width:100%;">
                         <div style="display:flex;justify-content:flex-start;">
                               <img style="margin-top:2.5%;margin-left:2.8%;margin-right:64%;" src="Images/last-logo.png" alt="logo">
@@ -61,7 +61,10 @@
                   </button>
             </div>
       </section>
-      
+
+                              
+
+
 </body>
 
 </html>
